@@ -1,39 +1,33 @@
-import React from 'react'
-import { Box, Button, Container, Img, Input, Text } from "@chakra-ui/react";
-import { useContext, useState } from "react";
+import React, { useState } from "react";
+import { Alert } from "react-bootstrap";
+//import Home from './Home';
 import { Link } from "react-router-dom";
-import { AuthContext } from "../Context/AuthContext";
-var database = JSON.parse(localStorage.getItem("userData")) || [];
-  console.log(database)
-function Login() {
-  const [logEmail, setLogEmail] = useState("");
-  const [logPassword, setLogPassword] = useState("");
-  const{LoginSuccess} = useContext(AuthContext)
-  const handleLogin = (e) => {
+import { Input,Container,Text,Box,Button,Img } from "@chakra-ui/react";
+// import "./Signup.css";
+//import "/node_modules/bootstrap/dist/css/bootstrap.css";
+const Login = () => {
+  const [emaillog, setEmaillog] = useState("");
+  const [passwordlog, setPasswordlog] = useState("");
+  const [flag, setFlag] = useState(false);
+  const [home, setHome] = useState(true);
+
+  function handleLogin(e) {
     e.preventDefault();
-    checkFunc(logEmail, logPassword);
-  };
+    let mail = localStorage.getItem("Email").replace(/"/g, "");
+    let pass = localStorage.getItem("Password").replace(/"/g, "");
 
-  var flag = false;
-  const checkFunc = (logEmail, logPassword) => {
-    database.map((elem) => {
-      // console.log(elem.email)
-      if (elem.email === logEmail && elem.password === logPassword) {
-        flag = true;
-        LoginSuccess(elem.nickName)
-     
-      }
-    });
-
-    if (flag === true) {
-      alert("success");
+    if (!emaillog || !passwordlog) {
+      setFlag(true);
+      console.log("Empty");
+    } else if (passwordlog !== pass || emaillog !== mail) {
+      setFlag(true);
     } else {
-      alert("unsuccess");
+      setHome(!home);
+      setFlag(false);
     }
-  };
-
+  }
   return (
-    <>
+    <div>
       <Container
         maxW="container.xl"
          height="550px"
@@ -41,67 +35,78 @@ function Login() {
     centerContent
         backgroundImage="//img.gkbcdn.com/bn/2207/roborockq7max-62d4c7422b40c92434e2fa93._p1_.jpg"
       >
-        <Container maxW="md" bg="white" mt="50px"   >
+      <form onSubmit={handleLogin}>
+      <Container maxW="md" bg="white" mt="50px"   >
           <Text fontWeight="bold" textAlign="start" p={4}>
             Sign In
           </Text>
-
+        <div className="form-group">
+          {/* <label>Email</label> */}
           <Input
-            placeholder="Email address"
             type="email"
-            value={logEmail}
-            onChange={(e) => setLogEmail(e.target.value)}
+            className="form-control"
+            placeholder="Email address"
+            onChange={(event) => setEmaillog(event.target.value)}
           />
-
+        </div>
+        <div className="form-group">
           <br />
-          <br />
-
+          {/* <label>Password</label> */}
           <Input
-            p={5}
-            placeholder="Password"
             type="password"
-            value={logPassword}
-            onChange={(e) => setLogPassword(e.target.value)}
+            className="form-control"
+            placeholder=" Password"
+            onChange={(event) => setPasswordlog(event.target.value)}
           />
           <br />
           <br />
-          <Box
+
+          {/* <input type="checkbox" />  
+                 <label>Keep me Signed in </label><br/> */}
+          
+                 <Box
             display="flex"
             justifyContent="space-between"
             width="100%"
             // border="1px solid red"
           >
-          
+            {/* <Box border="2px solid green" width="60%" display="flex" ml="100px" >  */}
             <label style={{ marginLeft: "220px", color: "grey" }}>
-              <input type="checkbox" style={{ marginLeft: "-270px" }} />
+              <input type="checkbox" style={{ marginLeft: "-220px" }} />
               Keep me signed in
             </label>
+            {/* </Box>
+          <Box>  */}
             <Text color="grey">Forgot your password?</Text>
+            {/* </Box> */}
           </Box>
+        </div>
           <br />
           <br />
-          <Button w="420px" bg="#0066FF" onClick={handleLogin}>
+        <Link to="/">
+        <Button w="420px" bg="#0066FF" >
             submit
           </Button>
+        </Link>
           <br />
           <br />
-          <Link to="/regitration">
+        <Link to="/registration">
             <Button w="420px">Create a new account</Button>
           </Link>
           <br />
           <br />
-          <p>--------------------------or--------------------------</p>
+          <p>-------------------------------or-------------------------------</p>
 
-          <Button width="50px" height="50px" padding="0px" >
+          <Button marginLeft="180px" width="50px" height="50px" padding="0px" >
             <Img height="200px"
               src="https://static.nnnow.com/google-social-login.svg"
               onClick="https://www.google.co.in/" 
             /></Button>
-        </Container>
       </Container>
-      
-    </>
+      </form>
+      </Container>
+    </div>
   );
-}
+};
 
 export default Login;
