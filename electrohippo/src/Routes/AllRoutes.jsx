@@ -10,7 +10,7 @@ function AllRoutes() {
     <Routes>
     <Route path='/' element={<Home/>} />
     <Route path='/login' element={<Login/>} />
-    <Route path='/regitration' element={<Registration/>} />
+    <Route path='/registration' element={<Registration/>} />
     </Routes>
     </>
   )

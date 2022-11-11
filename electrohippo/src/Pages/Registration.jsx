@@ -1,81 +1,110 @@
-import React from 'react'
-import { Button, Container, Input, Text } from "@chakra-ui/react";
-import { useState } from "react";
+import React, { useState } from "react";
+import { Alert } from "react-bootstrap";
 import { Link } from "react-router-dom";
- 
-var dataInLocal = JSON.parse(localStorage.getItem("userData")) || [];
+import Login from "./Login";
+import {Button} from "@chakra-ui/react"
+//import "/node_modules/bootstrap/dist/css/bootstrap.css";
 
-function Regiter() {
-  const [nickName, setNickName] = useState("");
+const Registration = () => {
+  const [name, setName] = useState("");
+
   const [email, setEmail] = useState("");
+
   const [password, setPassword] = useState("");
- 
-  const handleSubmit = (e) => {
+
+  const [phone, setPhone] = useState("");
+
+  const [flag, setFlag] = useState(false);
+
+  const [login, setLogin] = useState(true);
+
+  function handleSubmit(e) {
     e.preventDefault();
 
-    var payload = {
-      email: email,
-      password: password,
-      nickName:nickName
-    };
-    dataInLocal.push(payload);
-
-    localStorage.setItem("userData", JSON.stringify(dataInLocal));
-    alert("acount created successfully")
-  };
+    if (!name || !email || !password || !phone) {
+      setFlag(true);
+    } else {
+      setFlag(false);
+      localStorage.setItem("Email", JSON.stringify(email));
+      localStorage.setItem("Password", JSON.stringify(password));
+      console.log("Saved in LS");
+      setLogin(!login);
+    }
+  }
+  function handleClick() {
+    setLogin(!login);
+  }
 
   return (
-    <>
-      <Container
-        maxW="container.xl"
-        height="550px"
-       
-        centerContent
-        backgroundImage="//img.gkbcdn.com/bn/2207/roborockq7max-62d4c7422b40c92434e2fa93._p1_.jpg"
-      >
-        <Container maxW="md" bg="white" mt="70px">
-          <Text fontWeight="bold" textAlign="start" p={4}>
-            Create your account
-          </Text>
+    <div className="box">
+      <div className="outer">
+        <div className="inner">
+          {login ? (
+            <form onSubmit={handleSubmit}>
+              <h3>Create Your Account</h3>
+              <div className="form-group">
+                {/* <label>Name</label> */}
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Nick Name"
+                  onChange={(event) => setName(event.target.value)}
+                />
+              </div>
+              <div className="form-group">
+                {/* <label>Email</label> */}
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Email address"
+                  onChange={(event) => setEmail(event.target.value)}
+                />
+              </div>
+              <div className="form-group">
+                {/* <label>Password</label> */}
+                <input
+                  type="password"
+                  className="form-control"
+                  placeholder=" Password"
+                  onChange={(event) => setPassword(event.target.value)}
+                />
+              </div>
+              <div className="form-group">
+                {/* <label>Phone number</label> */}
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Enter mobile number"
+                  onChange={(event) => setPhone(event.target.value)}
+                />
+              </div>
+              <input type="checkbox" />
+              <label>
+                I agree to GeekBuying's Terms of Use & Privacy Policy.
+              </label>
+              <br />
+              <Link to="/login">
+                <Button type="submit" className="s">
+                  Create Account
+                </Button>
+              </Link>
+              <p className="hint" onClick={handleClick}>
+                Alread Registered login ?
+              </p>
 
-          <Input
-            placeholder="Nick name"
-            type="text"
-            onChange={(e) => setNickName(e.target.value)}
-          />
-            <br />
-            <br />   
-          <Input
-            placeholder="Email address"
-            type="email"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-
-          <br />
-          <br />
-
-          <Input
-            p={5}
-            placeholder="Password"
-            type="password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <br />
-          <br />
-          <Button w="420px" bg="#0066FF" onClick={handleSubmit}>
-            Create account
-          </Button>
-          <br />
-          <br />
-          <Link to="/login">
-            <Button w="420px">Go to login</Button>
-          </Link>
-          <br />
-          <br />
-        </Container>
-      </Container>
-    </>
+              {flag && (
+                <Alert color="primary" variant="danger">
+                  Please Fill Every Field
+                </Alert>
+              )}
+            </form>
+          ) : (
+            <Login />
+          )}
+        </div>
+      </div>
+    </div>
   );
-}
+};
 
-export default Regiter;
+export default Registration;
