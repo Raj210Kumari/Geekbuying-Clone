@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./css/navbarMid.css";
 import { useSelector } from "react-redux";
+import logo from "../electro.jpg"
 
 const NavbarMid = () => {
   const [show, setShow] = useState(false);
@@ -20,7 +21,7 @@ const NavbarMid = () => {
       <Link to="/home">
         <img
           id="navMidLogo"
-          src="https://www.shareasale.com/images/logo2016_1.jpg"
+          src={logo}
           alt="LOGO"
         />
       </Link>
