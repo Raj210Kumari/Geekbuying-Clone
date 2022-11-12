@@ -1,0 +1,98 @@
+*{
+  background-color: #f1f6fd
+}
+#foot {
+  margin: 10px 80px;
+}
+
+#footTop {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+
+/* #footTop div {
+    border: 1px solid red;
+  } */
+
+#footTopLeft p {
+  font-size: 12px;
+  color: darkgray;
+}
+#footSubscribe input {
+  padding: 10px 20px;
+  border: 1px solid #074ea3;
+  width: 70%;
+}
+#footSubscribe input:focus {
+  outline-color: #074ea3;
+}
+#footSubscribe button {
+  background-color: #074ea3;
+  border: 1px solid #074ea3;
+  margin-left: 0;
+  color: white;
+  width: 20%;
+  padding: 10px 5px;
+}
+#footTopIcons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footTopIconsLeft {
+  display: flex;
+  justify-content: space-evenly;
+  width: 350px;
+}
+#footTopIconsLeft img,
+#footTopIconsRight img {
+  width: 20px;
+  height: 20px;
+}
+#footTopIconsRight {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  font-size: 12px;
+}
+
+#footTopRightLinks {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 12px;
+  color: black;
+}
+
+#footMid {
+  border-bottom: 1px solid darkgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#footMidHigh button {
+  border: none;
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+#footMidHigh button:hover {
+  color: rgb(49, 109, 199);
+}
+#footMidLow {
+  display: flex;
+  margin-top: 50px;
+}
+#footMidLow p {
+  margin: 10px 5px;
+  padding-right: 5px;
+  color: darkgray;
+}
+#footMidLow p:hover {
+  color: rgb(49, 109, 199);
+}
+#footMidLow p:not(:last-child) {
+  border-right: 1px solid darkgray;
+}
+#footBottom img {
+  width: 100%;
+}

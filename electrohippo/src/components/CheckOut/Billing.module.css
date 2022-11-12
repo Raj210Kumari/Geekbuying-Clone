@@ -1,0 +1,267 @@
+.header {
+  height: 110px;
+  border-bottom: 0.1mm solid #e6e7e8;
+}
+.image {
+  margin-top: -5px;
+  width: 220px;
+  height: 110px;
+}
+.left_content {
+  display: flex;
+  justify-content: right;
+  margin: 30px 0px 0px 0px;
+}
+.table {
+  margin: 20px 0px 0px 150px;
+  width: 103%;
+}
+.note {
+  color: gray;
+  padding-top: 20px;
+}
+
+.save {
+  background-color: orange;
+  color: white;
+  margin: 10px;
+  padding: 10px 50px 10px 50px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+.cancel {
+  background-color: white;
+  font-size: 20px;
+  padding: 10px 50px 10px 50px;
+  margin-left: 10px;
+  border-width: thin;
+  cursor: pointer;
+}
+.button {
+  margin-left: 320px;
+}
+h3 {
+  margin-top: 45px;
+  display: flex;
+  justify-content: left;
+}
+
+.colorBox {
+  height: 30px;
+  padding: -10px;
+  background-color: lavenderblush;
+  display: flex;
+  justify-content: left;
+  color: gray;
+}
+/* p{
+    margin:0px 0px 0px 20px;
+} */
+.box1 {
+  margin-top: 20px;
+  border: 1px solid #e6e7e8;
+}
+.astrick {
+  color: red;
+  font-size: 15px;
+}
+.Input:focus {
+  outline: none;
+}
+.Input {
+  margin-top: 20px;
+  padding-left: 10px;
+  /* padding: 15px 200px 10px 5px; */
+  font-size: 14px;
+  border: 1px solid #e6e7e8;
+  height: 40px;
+  width: 350px;
+}
+.Input:focus {
+  outline: none;
+}
+.phone {
+  position: relative;
+  font-size: 14px;
+  height: 40px;
+  width: 315px;
+  border: 1px solid #e6e7e8;
+}
+.phone:focus {
+  outline: none;
+}
+.code {
+  font-size: 14px;
+  margin: 10px;
+}
+.select {
+  margin-top: 20px;
+  height: 44px;
+  width: 365px;
+  font-size: 14px;
+  border: 1px solid #e6e7e8;
+}
+.select:focus {
+  outline: none;
+}
+
+.checkbox {
+  /* height: 25px;
+    width:20px; */
+  margin: 10px 0px 5px 0px;
+}
+.phone_div {
+  margin-top: 20px;
+  display: flex;
+  background-color: gainsboro;
+  /* border: 1px solid #e6e7e8; */
+}
+
+.box4 {
+  display: flex;
+  border: 1px solid #e6e7e8;
+  margin-top: 30px;
+}
+.left_box {
+  width: 50%;
+}
+.right_box {
+  width: 50%;
+  height: 400px;
+}
+.product_list_div {
+  height: 100px;
+  border: 1px solid red;
+}
+
+.first_row {
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+.left {
+  margin-left: -23px;
+}
+.center {
+  margin-left: -50px;
+  color: black;
+}
+.right {
+  color: black;
+  font-weight: 600;
+}
+.second_row {
+  margin-top: 20px;
+  margin: 40px 0px 0px 30px;
+}
+.exclamation {
+  margin-left: 10px;
+  color: black;
+}
+.second_note {
+  font-size: 12px;
+  margin: 10px 0px 0px 0px;
+  color: gray;
+}
+.gray_box {
+  margin-top: 30px;
+  background-color: lavender;
+  padding-bottom: 40px;
+  border: 1px solid lavender;
+}
+.third_row {
+  margin: 20px 0px 0px 0px;
+}
+.left_box {
+  margin: 50px 0px 0px 40px;
+}
+.buttons {
+  display: flex;
+}
+.coupon_input {
+  width: 350px;
+  margin-top: 20px;
+  height: 25px;
+  font-size: 14px;
+}
+.coupon_input:focus {
+  outline: none;
+}
+.coupon {
+  color: gray;
+}
+.apply {
+  margin-top: 19px;
+  margin-left: 1px;
+  padding: 8px 20px 8px 20px;
+  background-color: orange;
+  border: 0px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+.right_box {
+  /* border: 1px solid red; */
+  width: 250px;
+  height: 250px;
+  margin: 50px 0px 0px 200px;
+  color: gray;
+}
+.order {
+  margin: 30px 0px 0px 20px;
+  width: 210px;
+  height: 50px;
+  background-color: orange;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.box3 {
+  padding-top: -20px;
+  border: 1px solid #e6e7e8;
+  padding-bottom: 2px;
+}
+
+.second_page_shipping {
+  border: 1px solid #e6e7e8;
+}
+.div1 {
+  border: 1px solid #e6e7e8;
+  padding: 20px;
+}
+.coupon1 {
+  color: gray;
+  margin-right: 10px;
+}
+.first_row1 {
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+.center1 {
+  margin-left: -50px;
+  color: black;
+}
+.left1 {
+  color: black;
+}
+.shipping {
+  border: 1px solid #e6e7e8;
+  padding-bottom: 20px;
+}
+.right_box1 {
+  margin-top: 20px;
+  width: 250px;
+  height: 250px;
+  margin-left: 800px;
+}

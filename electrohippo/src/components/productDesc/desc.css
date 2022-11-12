@@ -1,0 +1,267 @@
+
+/* *{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Work Sans', sans-serif;
+} */
+
+button,.pointer{
+    cursor: pointer;
+}
+
+.biggy{
+    padding: 20px 160px;
+}
+
+
+
+.headerImg{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.subMain{
+    display: flex;
+}
+
+.mainImgBox {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.mainImgBox img{
+    width: 100%;
+    height: auto;
+}
+
+.forSpans span{
+   margin-right: 40px;
+}
+
+.timer{
+    height: 40px;
+    background-color: #ff9c01;
+    font-weight: bold;
+}
+
+.timer div img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.title{
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #333333;
+    padding-bottom: 8px;
+}
+
+.forSpans{
+    padding-bottom: 8px;
+}
+
+.forSpans span{
+     font-size: 15px;
+     color: #333333;
+     font-weight: bold;
+}
+
+.forSpans span span{
+    font-weight: 600;
+    color: #999999;
+}
+
+.timer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.timerLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timerRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock11{
+    width: 100px;
+    /* background-color: #fff; */
+    box-sizing: border-box;
+}
+
+
+
+/* Price */
+
+
+.price{
+    background-color: #f3f3f3;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-family: 'Roboto Slab', serif;
+   
+}
+
+.label{
+    color: #999;
+    font-weight: bold;
+    font-size: 15px;
+    width: 140px;
+}
+
+.price1{
+    font-family: inherit;
+    color: #ff9c01;
+    font-size: 28px;
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+
+.price2{
+    color: rgb(120, 117, 117);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.price3{
+  background-color:#ff9c01 ;
+  color: white;
+  font-weight: bold;
+  padding: 3px;
+  margin-right: 6px;
+}
+
+/* Ship */
+.shipFrom{
+    padding-left: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.shipName{
+    border: 1px solid #074ea3;
+    color: #074ea3;
+    font-weight: 600;
+    padding: 7px;
+}
+
+.qty{
+    height: 60px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+  
+}
+
+.counter,.counterBox{
+    width: 40px;
+    height: 30px;
+    font-size: 1.33rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.counterBox{
+    width: 50px;
+    border: 1px solid rgb(100, 99, 99);
+    background-color: rgb(242, 242, 242);
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+/* Buttons */
+.buttons{
+   margin-top: 10px;
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    align-items: center;
+}
+  
+
+.buyNow,.addToCart{
+    border: .5px solid #ff9c01;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    color: #ff9c01;
+    background-color: #FFF5E5;
+    padding: 10px 20px;
+    margin-right: 20px;
+
+}
+
+.addToCart{
+    background-color: #ff9c01;
+    color: white;
+}
+
+.wishList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wishList span{
+    color: #333333;
+}
+
+.wishList img{
+    width: 25px;
+    margin-right: 5px;
+    
+}
+
+.paypal{
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+}
+
+.paypal img{
+    width: 100px;
+}
+
+/****************  
+    Footer
+ **************/
+
+ .footer > div img{
+    width: 34px;
+    margin-right: 12px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px  180px;
+}
+
+.footer p{
+    font-size: 14.5px;
+    margin: 0;
+}
+
+.footer .four{
+    display: flex;
+    align-items: center;
+
+    
+}

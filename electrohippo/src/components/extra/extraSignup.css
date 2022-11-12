@@ -1,0 +1,45 @@
+#extraSignup {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+  text-align: center;
+}
+
+#extraSignup input {
+  border: 1px solid grey;
+  padding: 0.5rem 1rem;
+}
+#extraSignup input:focus {
+  outline: grey;
+}
+
+#extraSignup:hover {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#extraSignupCheck {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#extraSignup #extraSignupButton {
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: #ff9c01;
+  border-radius: 5px;
+  border: none;
+}
+#extraSignup button {
+  margin-top: 30px;
+  padding: 0.5rem 0;
+  border: 1px solid grey;
+}

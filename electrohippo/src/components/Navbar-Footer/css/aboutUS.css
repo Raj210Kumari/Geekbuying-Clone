@@ -1,0 +1,13 @@
+#about {
+  margin: 4rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+#aboutLeft div * {
+  cursor: pointer;
+}
+
+#aboutLeft div *:hover {
+  color: #4b83c1;
+}
