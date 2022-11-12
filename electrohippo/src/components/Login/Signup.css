@@ -1,0 +1,68 @@
+.outer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: larger;
+}
+.inner {
+  width: 450px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  /* border-radius: 15px; */
+  transition: all 0.3s;
+  padding: 25px;
+  height: auto;
+  /* //border:1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.inner .form-control {
+  height: 20px;
+  width: 200px;
+  border: 1px solid black;
+}
+.outer .form-control {
+  border-color: rgb(219, 224, 224);
+  box-shadow: none;
+  /* font-size: 20px;
+    margin:7px;
+    padding:10px; */
+  height: 40px;
+  width: 350px;
+
+  padding: 5px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.outer h3 {
+  font-weight: bold;
+  text-align: center;
+  margin: 0%;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+label {
+  font-weight: 600;
+}
+.forgot-password,
+.forgot-password {
+  text-align: right;
+  font-size: 19px;
+}
+.s {
+  height: 40px;
+  width: 350px;
+  padding: 5px;
+  margin-top: 20px;
+  font-size: 14px;
+  background-color: rgb(245, 161, 7);
+}
+.hint {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+Alert {
+  font-size: larger;
+  color: rgb(245, 161, 7);
+}

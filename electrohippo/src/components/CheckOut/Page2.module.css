@@ -1,0 +1,61 @@
+.header {
+  height: 110px;
+  border-bottom: 0.1mm solid #e6e7e8;
+}
+.div1 {
+  border: 1px solid #e6e7e8;
+  padding: 20px;
+}
+.coupon1 {
+  color: gray;
+  margin-right: 10px;
+}
+.shipping {
+  border: 1px solid #e6e7e8;
+  padding-bottom: 20px;
+}
+.first_row1 {
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+.first_row {
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+.left1 {
+  color: black;
+}
+.center1 {
+  margin-left: -50px;
+  color: black;
+}
+.order {
+  margin: 30px 0px 0px 20px;
+  width: 210px;
+  height: 50px;
+  background-color: orange;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.right_box1 {
+  margin-top: 20px;
+  width: 250px;
+  height: 250px;
+  margin-left: 800px;
+}
+.image {
+  width: 220px;
+  height: 110px;
+}

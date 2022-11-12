@@ -1,0 +1,54 @@
+#navBottomSelect {
+  position: relative;
+  top: 2.62rem;
+  left: -54rem;
+
+  background-color: white;
+  border: 1px solid lightgray;
+  height: 17rem;
+  width: 15rem;
+  padding: 10px 15px;
+  padding-right: 0;
+}
+#navBottomSelect Link {
+  text-decoration: none;
+}
+
+.navBottomSelectHide:hover {
+  font-weight: bold;
+  color: #074ea3;
+}
+#navBottomSelectHomeDiv {
+  position: relative;
+  top: -15.8rem;
+  left: -38.5rem;
+
+  border: 1px solid lightgray;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  width: 60rem;
+  visibility: visible;
+}
+#navBottomSelectHomeDiv div *:hover {
+  color: #074ea3;
+  font-size: 1rem;
+}
+
+#navBottomSelect:hover + #navBottomSelectHomeDiv {
+  background: #ccc;
+  visibility: visible;
+}
+
+#navBottomSelectHomeDiv:hover {
+  background: #ccc;
+}
+#navBottomSelectHomeDiv:not(:hover) {
+  visibility: hidden;
+}
+
+#navBottomSelectHomeDiv div {
+  margin-left: 15px;
+}

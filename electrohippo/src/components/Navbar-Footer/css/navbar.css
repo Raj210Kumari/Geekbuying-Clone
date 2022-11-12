@@ -1,0 +1,72 @@
+*{
+  background-color: #06f
+}
+nav {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+/* ----- navTop Starts ----- */
+#navTop {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: flex-end;
+  height: 35px;
+  font-size: 12px;
+  margin: 0 6rem;
+}
+#navTop p {
+  cursor: pointer;
+}
+#navTop div {
+  margin-left: 40px;
+}
+
+#navTop img {
+  width: 1.3rem;
+  height: 1rem;
+}
+
+#navTop .navTopArrow {
+  width: 0.8rem;
+}
+
+/* ----- navMid (in different file) ----- */
+
+/* ----- navBottom Starts ----- */
+#navBottom {
+  margin: 0 6rem;
+  display: flex;
+  height: 2rem;
+  max-width: 50%;
+}
+
+#navBottomSelectButton {
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px;
+  width: 15rem;
+  flex-shrink: 0;
+}
+#navBottomSelectButton img {
+  width: 0.5rem;
+}
+
+.navBottomButton {
+  margin-left: 1rem;
+  border: none;
+  width: 5rem;
+  background-color: white;
+  font-weight: bold;
+  flex-shrink: 0;
+  /* border: 1px solid black; */
+}
+/* #navBottomButtondiv {
+  position: absolute;
+  left: 47rem;
+} */
+
+.navBottomButton:hover {
+  color: #074ea3;
+}
