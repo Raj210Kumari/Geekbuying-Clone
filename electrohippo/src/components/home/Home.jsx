@@ -2,6 +2,9 @@ import React from "react";
 
 import { useState, useEffect, useRef } from "react";
 
+import logo from "./HomeSale.jpg"
+import { Image } from "@chakra-ui/react";
+
 const images = [
   "https://img.gkbcdn.com/s3/bn/2205/1090x422-6274f0ca2b40c938fc33ef3d.jpg",
   "https://img.gkbcdn.com/s3/bn/2205/1090x422-627102d02b40c930d0c34570.jpg",
@@ -189,6 +192,9 @@ export const Home = () => {
       className="main"
       style={{ background: "#f2f2f2", height: "3340px", width: "100%" }}
     >
+      <div>
+        <Image src={logo} alt="HomeSale"/>
+      </div>
       <div className="reddiv">
         <div className="slideshow">
           <a href="./mobile">

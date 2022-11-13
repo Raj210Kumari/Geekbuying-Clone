@@ -25,7 +25,7 @@ export const Mobile = () => {
     <>
       <div className="img-out">
         <img
-          src="https://img.gkbcdn.com/s3/bn/2205/1500x125-6271031b2b40c930d0488be9.jpg"
+          src="https://img.gkbcdn.com/s3/bn/2211/1500x125-636b223b2b40c91ee886b16f.jpg"
           alt=""
           className="img-stuck"
         />
