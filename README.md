@@ -4,7 +4,7 @@
 
 <p>Geekbuying was founded in 2012 with the mission of creating a platform that truly puts the customer first.</p>
 
-Hosted website is Netlify : https://storied-tarsier-04ed25.netlify.app
+Hosted website is Netlify : https://effervescent-dragon-9ae52a.netlify.app/
 
 <br/>
 <br/>
