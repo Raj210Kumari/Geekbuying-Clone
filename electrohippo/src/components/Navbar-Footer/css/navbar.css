@@ -1,9 +1,8 @@
-*{
-  background-color: #06f
-}
+
 nav {
   border-bottom: 1px solid lightgray;
   padding-bottom: 10px;
+  background-color: #0066ff
 }
 
 /* ----- navTop Starts ----- */
@@ -14,6 +13,7 @@ nav {
   height: 35px;
   font-size: 12px;
   margin: 0 6rem;
+  background-color: #0066ff
 }
 #navTop p {
   cursor: pointer;
